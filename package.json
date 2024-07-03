@@ -1,0 +1,34 @@
+{
+  "name": "hyper-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon --env-file=.env src/app.js",
+    "start": "node --env-file=.env src/app.js"
+  },
+  "keywords": [
+    "hyper-express",
+    "hyper-starter",
+    "starter",
+    "hyper",
+    "hyper-express-starter",
+    "performance",
+    "high-performance",
+    "router",
+    "express",
+    "server",
+    "express-alternative",
+    "hyperexpress"
+  ],
+  "author": "AhmedEl5WaGa",
+  "license": "MIT",
+  "dependencies": {
+    "http-status": "^1.7.4",
+    "hyper-express": "^6.16.4",
+    "joi": "^17.13.3",
+    "mongoose": "^8.4.4",
+    "winston": "^3.13.0"
+  }
+}
