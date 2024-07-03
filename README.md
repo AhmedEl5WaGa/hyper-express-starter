@@ -66,6 +66,65 @@ To run this project, you will need to add the following environment variables to
 `MONGODB_URL` 
 
 
+## API Reference
+
+#### Get all APIs
+
+```http
+  GET /v1/api
+```
+
+#### Post API
+
+```http
+  POST /v1/api
+```
+
+| Body | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `name`      | `string` | **Required**. Name of api to create |
+| `description`      | `string` | **Not Required**. Description of api to create |
+
+
+#### Get One API
+
+```http
+  GET /v1/api/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of api to fetch |
+
+#### Put One api
+
+```http
+  PUT /v1/api/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of api to update |
+
+| Body | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `name`      | `string` | **Not Required**. Name of api to update |
+| `description`      | `string` | **Not Required**. Description of api to update |
+
+
+#### Delete One API
+
+```http
+  DELETE /v1/api/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of api to delete |
+
+
+
+
 ## Documentation
 
 - Middlewares
@@ -89,5 +148,5 @@ A centralized error handling mechanism is implemented to manage all errors effic
 - Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to enhance the project.
 
-License
-MIT
+## License
+[MIT](./LICENSE)
